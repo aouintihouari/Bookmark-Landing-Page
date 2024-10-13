@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boomkmark Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="w-full h-full">
+    <aside
+      class="bg-custom-dark-blue w-full h-0 fixed opacity-95 top-0 z-10 transition-all duration-700 ease-in-out"
+      id="overlay"
+    ></aside>
+    <main class="font-custom-family">
+      <header class="mx-auto w-4/5 mt-8 flex justify-between z-10">
+        <aside class="flex items-center z-10">
+          <img
+            id="header-logo"
+            class="z-10"
+            src="images/logo-bookmark.svg"
+            alt="logo"
+          />
+        </aside>
+        <nav id="navbar" class="hidden md:flex">
+          <ul
+            class="flex flex-col z-20 text-center text-white text-custom-x-big absolute top-20 right-0 md:text-custom-dark-blue md:text-custom-x-small font-custom-regular w-full md:flex-row md:static md:items-baseline"
+          >
+            <li
+              class="hidden separation w-8/12 h-xs mt-5 mb-5 mx-auto bg-white"
+            ></li>
+            <li
+              class="cursor-pointer md:hover:text-custom-red md:transition md:duration-500"
+            >
+              FEATURES
+            </li>
+            <li
+              class="hidden separation w-8/12 h-xs mt-5 mb-5 mx-auto bg-white"
+            ></li>
+            <li
+              class="md:ml-8 cursor-pointer md:hover:text-custom-red md:transition md:duration-500"
+            >
+              PRICING
+            </li>
+            <li
+              class="hidden separation w-8/12 h-xs mt-5 mb-5 mx-auto bg-white"
+            ></li>
+            <li
+              class="cursor-pointer md:ml-8 md:hover:text-custom-red md:transition md:duration-500"
+            >
+              CONTACT
+            </li>
+            <li
+              class="hidden separation w-8/12 h-xs mt-5 mb-10 mx-auto bg-white"
+            ></li>
+            <li
+              class="cursor-pointer w-8/12 mx-auto text-white border-2 rounded p-3 md:ml-8 md:py-2 md:px-6 md:bg-custom-red md:shadow-lg md:border-custom-red md:hover:bg-white md:hover:text-custom-red md:transition md:duration-500"
+            >
+              LOGIN
+            </li>
+          </ul>
+        </nav>
+        <div class="md:hidden flex">
+          <img
+            class="min-w-5 min-h-5"
+            id="hamburger"
+            src="images/icon-hamburger.svg"
+            alt="hamburger"
+          />
+          <img
+            id="close"
+            class="hidden z-10"
+            src="images/icon-close.svg"
+            alt="close"
+          />
+        </div>
+        <aside
+          id="share-container"
+          class="hidden z-30 absolute bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center items-center"
+        >
+          <img class="mr-10" src="images/icon-facebook.svg" alt="Facebook" />
+          <img src="images/icon-twitter.svg" alt="Twitter" />
+        </aside>
+      </header>
+      <section
+        class="flex flex-col mt-16 z-1 md:flex-row-reverse md:justify-between md:mt-20"
+      >
+        <aside class="relative">
+          <div
+            class="z-1 right-0 top-16 rounded-l-full absolute h-52 w-80 bg-custom-light-blue md:top-32 md:h-80 md:w-9/12"
+          ></div>
+          <div class="z-1 relative">
+            <img src="images/illustration-hero.svg" alt="hero illustration" />
+          </div>
+        </aside>
+        <article
+          class="md:flex md:flex-col md:justify-center md:items-center md:w-8/12"
+        >
+          <h1
+            class="text-center text-custom-dark-blue text-custom-xx-big font-custom-bold mt-10 md:w-8/12 md:text-start md:text-custom-xxx-big md:custom-bold md:leading-none"
+          >
+            A Simple Bookmark Manager
+          </h1>
+          <p
+            class="text-center text-custom-x-small text-custom-gray w-10/12 mx-auto my-3 md:w-8/12 md:text-start md:text-custom-big md:mt-7"
+          >
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <aside
+            class="my-10 flex justify-evenly font-custom-bold md:w-8/12 md:justify-start"
+          >
+            <button
+              class="bg-custom-light-blue text-white shadow-lg p-4 border-2 rounded-lg md:mr-5 md:px-10 hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+            >
+              Get it on Chrome
+            </button>
+            <button
+              class="bg-gray-100 text-custom-dark-blue shadow-lg p-4 border-2 rounded-lg md:px-10 hover:border-custom-dark-blue transition duration-500"
+            >
+              Get it on Firefox
+            </button>
+          </aside>
+        </article>
+      </section>
+      <section class="flex flex-col justify-center text-center">
+        <h2
+          class="text-custom-xx-big font-custom-bold text-custom-dark-blue mx-auto w-10/12"
+        >
+          Features
+        </h2>
+        <p
+          class="text-custom-small text-custom-gray mx-auto w-10/12 mt-5 md:w-4/12"
+        >
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <aside
+          class="flex flex-col justify-center text-center mt-14 md:flex-row"
+        >
+          <div class="w-10/12 h-xs bg-gray-100 mx-auto md:hidden"></div>
+          <div class="md:mr-14">
+            <h3
+              class="tab my-5 text-custom-dark-blue cursor-pointer hover:text-custom-red transition duration-500"
+              data-tab="0"
+            >
+              Simple Bookmarking
+            </h3>
+            <div
+              class="underline-indicator mx-auto h-1 w-4/12 bg-red-500 transition-all duration-300 md:w-10/12"
+            ></div>
+          </div>
+          <div class="w-10/12 h-xs bg-gray-100 mx-auto md:hidden"></div>
+          <div class="md:mr-14">
+            <h3
+              class="tab my-5 text-custom-gray cursor-pointer hover:text-custom-red transition duration-500"
+              data-tab="1"
+            >
+              Speedy Searching
+            </h3>
+            <div
+              class="underline-indicator mx-auto h-1 w-0 bg-red-500 transition-all duration-300"
+            ></div>
+          </div>
+          <div class="w-10/12 h-xs bg-gray-100 mx-auto md:hidden"></div>
+          <div>
+            <h3
+              class="tab my-5 text-custom-gray cursor-pointer hover:text-custom-red transition duration-500"
+              data-tab="2"
+            >
+              Easy Sharing
+            </h3>
+            <div
+              class="underline-indicator mx-auto h-1 w-0 bg-red-500 transition-all duration-300"
+            ></div>
+            <div class="w-10/12 h-xs bg-gray-100 mx-auto md:hidden"></div>
+          </div>
+        </aside>
+      </section>
+      <article class="mt-96 flex flex-col md:flex-row md:mt-52">
+        <aside class="relative mb-20 md:w-10/12">
+          <div
+            class="z-1 absolute bottom-0 left-0 rounded-r-full h-52 w-80 bg-custom-light-blue md:top-32 md:h-96 md:w-9/12 md:static md:flex"
+          ></div>
+          <div class="relative z-1 md:mt-18">
+            <img
+              class="absolute w-10/12 bottom-10 left-20 md:w-8/12 md:left-44"
+              src="images/illustration-features-tab-1.svg"
+              alt="illustration features"
+              id="feature-image"
+            />
+          </div>
+        </aside>
+        <section
+          class="flex flex-col justify-center md:justify-stretch md:mt-10 md:mr-0"
+        >
+          <h4
+            id="feature-title"
+            class="text-custom-x-big text-custom-dark-blue font-custom-bold mx-auto md:mx-0 md:text-custom-xx-big"
+          >
+            Bookmark in one click
+          </h4>
+          <p
+            id="feature-description"
+            class="text-custom-small text-custom-gray w-10/12 mt-2 text-center mx-auto md:mx-0"
+          >
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+          <div class="my-5 mx-auto md:mx-0">
+            <button
+              class="bg-custom-light-blue text-white py-2 px-5 rounded-md shadow-lg border-2 hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+            >
+              More Info
+            </button>
+          </div>
+        </section>
+      </article>
+      <section class="flex flex-col mt-16 mb-10">
+        <article
+          class="flex flex-col justify-center text-center w-10/12 mx-auto"
+        >
+          <h5
+            class="text-custom-dark-blue text-custom-xx-big font-custom-bold mb-5"
+          >
+            Download the extension
+          </h5>
+          <p class="text-custom-gray mb-20">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </article>
+        <section class="flex flex-col md:flex-row md:justify-center">
+          <aside
+            class="flex flex-col justify-center w-10/12 mx-auto shadow-xl rounded-xl mt-20 md:w-2/12 h-auto md:mt-15 md:mx-6 md:h-80"
+          >
+            <img
+              class="w-5/12 mx-auto"
+              src="images/logo-chrome.svg"
+              alt="chrome logo"
+            />
+            <h6
+              class="text-center mt-4 text-custom-x-big font-custom-bold mb-2"
+            >
+              Add to Chrome
+            </h6>
+            <p class="text-center text-custom-gray text-custom-small">
+              Minimum version 62
+            </p>
+            <img class="my-5" src="images/bg-dots.svg" alt="dots" />
+            <div class="mt-2 mb-3 text-center text-custom-x-small">
+              <button
+                class="w-10/12 text-white px-3 py-4 rounded-lg bg-custom-light-blue border-2 hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </aside>
+          <aside
+            class="flex flex-col justify-center w-10/12 mx-auto shadow-xl rounded-xl mt-20 md:w-2/12 md:mx-6 md:mt-36 md:h-80"
+          >
+            <img
+              class="w-5/12 mx-auto"
+              src="images/logo-firefox.svg"
+              alt="chrome logo"
+            />
+            <h6
+              class="text-center mt-4 text-custom-x-big font-custom-bold mb-2"
+            >
+              Add to Firefox
+            </h6>
+            <p class="text-center text-custom-gray text-custom-small">
+              Minimum version 55
+            </p>
+            <img class="my-5" src="images/bg-dots.svg" alt="dots" />
+            <div class="mt-2 mb-3 text-center text-custom-x-small">
+              <button
+                class="w-10/12 text-white px-3 py-4 rounded-lg bg-custom-light-blue border-2 hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </aside>
+          <aside
+            class="flex flex-col justify-center w-10/12 mx-auto shadow-xl rounded-xl mt-20 md:w-2/12 md:h-80 md:mt-52 md:mx-10"
+          >
+            <img
+              class="w-5/12 mx-auto"
+              src="images/logo-opera.svg"
+              alt="chrome logo"
+            />
+            <h6
+              class="text-center mt-4 text-custom-x-big font-custom-bold mb-2"
+            >
+              Add to Opera
+            </h6>
+            <p class="text-center text-custom-gray text-custom-small">
+              Minimum version 46
+            </p>
+            <img class="my-5" src="images/bg-dots.svg" alt="dots" />
+            <div class="mt-2 mb-3 text-center text-custom-x-small">
+              <button
+                class="w-10/12 text-white px-3 py-4 rounded-lg bg-custom-light-blue border-2 hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </aside>
+        </section>
+      </section>
+      <section>
+        <div class="flex flex-col md:w-4/12 md:mx-auto">
+          <h6
+            class="font-custom-bold text-custom-x-big text-center text-custom-dark-blue my-10 w-8/12 mx-auto md:mb-2 md:w-auto md:text-custom-xx-big"
+          >
+            Frequently Asked Questions
+          </h6>
+          <p
+            class="text-center w-8/12 mx-auto text-custom-gray mb-20 md:w-12/12"
+          >
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+        <section class="flex flex-col justify-center w-10/12 mx-auto md:w-4/12">
+          <article class="faq flex flex-col cursor-pointer">
+            <div class="flex flex-row justify-between">
+              <p
+                class="text-custom-dark-blue text-custom-small hover:text-custom-red transition duration-500"
+              >
+                What is Bookmark?
+              </p>
+              <svg
+                class="arrow transition-transform duration-300 arrow-open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div>
+            <div class="separation w-8/12 h-xs my-5 mx-auto bg-gray-100"></div>
+            <p class="hidden faq-content mb-5 text-custom-gray">
+              Bookmark is a simple and intuitive tool designed to help you
+              organize and access your favorite websites. It allows you to save
+              websites, categorize them, and sync your bookmarks across multiple
+              devices, so you can access them easily whether you're at home, at
+              work, or on the go.
+            </p>
+          </article>
+          <article class="faq flex flex-col cursor-pointer">
+            <div class="flex flex-row justify-between">
+              <p
+                class="text-custom-dark-blue text-custom-small hover:text-custom-red transition duration-500"
+              >
+                How can I request a new browser?
+              </p>
+              <svg
+                class="arrow transition-transform duration-300 arrow-open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div>
+            <div class="separation w-8/12 h-xs my-5 mx-auto bg-gray-100"></div>
+            <p class="hidden faq-content mb-5 text-custom-gray">
+              If you'd like to see support for a browser that's not currently
+              listed, you can request it by emailing us at support@bookmark.com.
+              We're always open to feedback and will prioritize the most
+              requested browsers for future updates.
+            </p>
+          </article>
+          <article class="faq flex flex-col cursor-pointer">
+            <div class="flex flex-row justify-between">
+              <p
+                class="text-custom-dark-blue text-custom-small hover:text-custom-red transition duration-500"
+              >
+                Is there a mobile app?
+              </p>
+              <svg
+                class="arrow transition-transform duration-300 arrow-open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div>
+            <div class="separation w-8/12 h-xs my-5 mx-auto bg-gray-100"></div>
+            <p class="hidden faq-content mb-5 text-custom-gray">
+              Currently, Bookmark is available as a browser extension for
+              desktop use. However, we are working on developing a mobile app
+              for both iOS and Android, so you can manage your bookmarks on the
+              go. Stay tuned for updates on the release!
+            </p>
+          </article>
+          <article class="faq flex flex-col cursor-pointer">
+            <div class="flex flex-row justify-between">
+              <p
+                class="text-custom-dark-blue text-custom-small hover:text-custom-red"
+              >
+                What about other Chromium browsers?
+              </p>
+              <svg
+                class="arrow transition-transform duration-300 arrow-open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div>
+            <div class="separation w-8/12 h-xs my-5 mx-auto bg-gray-100"></div>
+            <p class="hidden faq-content mb-5 text-custom-gray">
+              Bookmark currently supports Chrome, Firefox, and Opera. Since
+              Chromium-based browsers share a similar foundation, you can expect
+              compatibility with most of them. If you encounter any issues or
+              have a specific browser in mind, feel free to let us know.
+            </p>
+          </article>
+        </section>
+        <div class="flex justify-center my-5">
+          <button
+            class="bg-custom-light-blue text-white px-5 py-2 border-2 rounded-lg hover:border-custom-light-blue hover:text-custom-light-blue hover:bg-white transition duration-500"
+          >
+            More Info
+          </button>
+        </div>
+      </section>
+      <section
+        class="flex flex-col mx-auto bg-custom-light-blue w-full pt-12 md:mt-32"
+      >
+        <p
+          class="text-custom-xx-small text-white text-center mb-2 tracking-extra-wide"
+        >
+          35,000+ ALREADY JOINED
+        </p>
+        <h6
+          class="text-custom-x-big text-white text-center mb-3 w-10/12 mx-auto md:text-custom-xx-big md:mt-5 md:w-3/12"
+        >
+          Stay up-to-date with what we’re doing
+        </h6>
+        <div
+          class="flex flex-col justify-center items-center md:flex-row md:align-baseline md:ml-64"
+        >
+          <div class="w-full max-w-lg mb-3 relative md:mr-0">
+            <div
+              id="email-container"
+              class="w-10/12 mx-auto rounded-lg bg-custom-light-blue"
+            >
+              <input
+                class="w-full mx-auto block h-13 py-3 px-2 border-4 rounded-lg border-custom-light-blue"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+              <div>
+                <img
+                  id="error-icon"
+                  class="hidden absolute bottom-12 right-14"
+                  src="images/icon-error.svg"
+                  alt="error icon"
+                />
+              </div>
+              <div
+                id="error-message"
+                class="hidden w-10/12 bg-custom-red text-custom-xx-small p-1 rounded-lg text-white italic"
+              >
+                Whoops, make sure it’s an email
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-lg mb-10">
+            <button
+              id="contact-us"
+              class="w-10/12 mx-auto block py-3 rounded-lg md:mt-7 md:w-4/12 md:ml-0 bg-custom-red text-white border-2 border-custom-red hover:bg-white hover:text-custom-red transition duration-500"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="bg-custom-dark-blue h-auto w-full flex flex-col justify-center items-center md:flex-row md:justify-between md:mx-auto"
+      >
+        <div
+          class="text-center md:w-10/12 md:mx-auto md:flex md:items-center md:justify-between"
+        >
+          <div class="my-10">
+            <img src="images/logo-bookmark-white-text.svg" alt="logo" />
+          </div>
+          <ul
+            class="flex flex-col justify-around text-white md:flex-row md:mr-96 cursor-pointer"
+          >
+            <li class="my-4 hover:text-custom-red transition duration-500">
+              FEATURES
+            </li>
+            <li
+              class="my-4 hover:text-custom-red transition duration-500 md:ml-10"
+            >
+              PRICING
+            </li>
+            <li
+              class="my-4 hover:text-custom-red transition duration-500 md:ml-10"
+            >
+              CONTACT
+            </li>
+          </ul>
+          <div class="flex my-10">
+            <div class="mx-10 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="fill-current text-white hover:text-custom-red transition duration-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                />
+              </svg>
+            </div>
+            <div class="cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                class="fill-current text-white hover:text-custom-red transition duration-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
